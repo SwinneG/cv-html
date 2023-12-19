@@ -1,0 +1,30 @@
+//MENU
+// .SiteMainMenu {
+//     display: none;
+    
+//     &--active {
+//         display: flex;
+//         position: fixed;
+//         top: 0;
+//         left: $header--desktopWidth;
+//         height: 100vh;
+//         width: 50%;
+//         background: $background-menu;
+//         z-index: 2;
+
+//         @include media-breakpoint-down(lg) {
+//             width: calc(100vw - $header--desktopWidth);
+//         }
+
+//         @include media-breakpoint-down(md) {
+//             width: 100vw;
+//             height: calc(100vh - $header--mobileHeight);
+//             top: $header--mobileHeight;
+//             left: 0;
+//             right: 0;
+//             bottom: 0;
+//             overflow: hidden;
+//         }
+//     }
+
+// }

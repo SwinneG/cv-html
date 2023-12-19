@@ -1,0 +1,22 @@
+@import 'vendors/bootstrap';
+@import 'vendors/fontawesome';
+
+@import 'utils/functions';
+
+
+@import 'utils/variables';
+
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/introduction';
+@import 'components/services';
+
+@import 'layouts/header';
+@import 'layouts/menu';
+@import 'layouts/main';
+@import 'layouts/footer';
+
+@import 'utils/globalClasses';

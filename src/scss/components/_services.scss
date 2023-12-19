@@ -1,0 +1,42 @@
+.services {
+    & > .container {
+
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+        align-items: center;
+
+        &__title {
+            flex: 0 0 100%;
+        }
+    }
+    &__card {
+        border: 4px solid $border-card;
+        flex: 0 1 48.5%;
+        padding: 25px;
+
+        &--big {
+            border: 10px solid $border-card;
+            flex: 0 0 100%;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            align-items: center; 
+
+            img {
+                width: 100%;
+                min-width: 0;
+            }
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}

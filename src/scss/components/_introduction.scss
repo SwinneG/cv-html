@@ -1,0 +1,65 @@
+.introduction {
+    background-image: url('~/src/assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    height: 100vh;
+    display: flex;
+
+    &:after {
+        content: "";
+        height: 100%;
+        background-image: url('../../assets/img/sg__logo--white.svg');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: 70px;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 20px;
+        bottom: 0;
+    }
+
+    & > .container {
+        display: flex;
+        position: relative;
+
+        &:before {
+            content:"";
+            height: 100%;
+            background:rgba(0,0,0,0.4);
+            position: absolute;
+            top: 15%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            height: 85%;
+        }
+    }
+
+    &__content {
+        background-color: grey;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .qualityList {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        &__item {
+            padding-right: 10px;
+            
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
