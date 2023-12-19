@@ -1,17 +1,17 @@
 .services {
-    & > .container {
+    // & > .container {
 
-    }
+    // }
     &__content {
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
         justify-content: center;
         align-items: center;
-
-        &__title {
-            flex: 0 0 100%;
-        }
+        padding: 50px 0;
+    }
+    &__title {
+        flex: 0 0 100%;
     }
     &__card {
         border: 4px solid $border-card;

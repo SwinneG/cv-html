@@ -29,23 +29,42 @@
             height: 100%;
             background:rgba(0,0,0,0.4);
             position: absolute;
-            top: 15%;
+            top: 10%;
             left: 0;
             right: 0;
             bottom: 0;
             z-index: 0;
-            height: 85%;
+            height: 90%;
         }
-    }
+    } 
 
     &__content {
-        background-color: grey;
         width: 50%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         z-index: 1;
+    }
+
+    &__subtitle {
+        font-size: $fontSize-default;
+        line-height: rem(24px);
+        margin: 0;
+    }
+
+    .socialNetworks {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 10px;
+
+        &__item {
+
+            &__link {
+                color: $color-white;
+            }
+        }
     }
 
     .qualityList {
