@@ -17,6 +17,7 @@
         border: 4px solid $border-card;
         flex: 0 1 48.5%;
         padding: 25px;
+        background-color: $color-black;
 
         &--big {
             border: 10px solid $border-card;
@@ -26,12 +27,33 @@
         &__content {
             display: flex;
             justify-content: center;
-            gap: 5px;
-            align-items: center; 
+            gap: 15px;
+            align-items: center;
+        }
 
-            img {
-                width: 100%;
-                min-width: 0;
+        &__item {
+            width: 100%;
+            min-width: 0;
+            flex: 1;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+
+            .image {
+                max-width: 90px;
+            }
+            .name {
+                display: none;
+            }
+            &:hover .name {
+                background-color: $color-black;
+                position: absolute;
+                top: -30px;
+                display: block;
+                border: 4px solid $border-card;
+                padding: 0 8px;
+                text-align: center;
             }
         }
 
