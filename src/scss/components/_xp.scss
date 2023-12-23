@@ -20,6 +20,7 @@
             background: $color-1;
             border-radius: 3px;
             z-index: 1;
+            transform: translateX(-50%);
         }
 
         &__item {
@@ -58,12 +59,15 @@
 
             &__company {
                 margin: 0;
-                font-size: rem(28px);
-                line-height: rem(46px);
+                font-size: rem(30px);
+                line-height: rem(42px);
+                font-weight: 600;
             }
 
             &__post {
                 color: $color-1;
+                font-size: rem(18px);
+                line-height: rem(22px);
             }
         }
     }

@@ -9,15 +9,19 @@
 @import 'base/base';
 @import 'base/typography';
 
+@import 'utils/globalClasses';
+
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/introduction';
 @import 'components/services';
 @import 'components/xp';
+@import 'components/formations';
+@import 'components/portfolio';
+@import 'components/contact';
 
 // @import 'layouts/header';
 // @import 'layouts/menu';
 @import 'layouts/main';
 @import 'layouts/footer';
 
-@import 'utils/globalClasses';

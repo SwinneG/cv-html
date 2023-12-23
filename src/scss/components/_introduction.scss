@@ -12,7 +12,7 @@
         background-image: url('../../assets/img/sg__logo--white.svg');
         background-position: bottom right;
         background-repeat: no-repeat;
-        background-size: 70px;
+        background-size: 60px;
         position: absolute;
         top: -20px;
         left: 0;
@@ -63,6 +63,12 @@
 
             &__link {
                 color: $color-white;
+                font-size: rem(28px);
+
+                &:hover,
+                &:focus {
+                    color: $color-1;
+                }
             }
         }
     }
