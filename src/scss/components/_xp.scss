@@ -1,0 +1,70 @@
+.xp {
+    background-color: $color-4;
+
+    &__content {
+        padding: 50px 0;
+    }
+
+    &__timeline {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 70px;
+            bottom: 70px;
+            left: 50%;
+            width: 4px;
+            background: $color-1;
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+        &__item {
+            flex: 0 0 100%;
+            // border: 1px solid white;
+            text-align: right;
+            padding: 30px;
+            padding-right: calc(50% + 30px);
+            position: relative;
+
+            &:after {
+                content: "";
+                display: block;
+                background: $color-1;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform:translate(-50%,-50%);
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                z-index: 2;
+            }
+
+            &--right {
+                text-align: left;
+                padding-right: 0;
+                padding-left: calc(50% + 30px);
+            }
+
+            &__period {
+                font-style: italic;
+                font-size: rem(14px);
+                line-height: rem(16px);
+            }
+
+            &__company {
+                margin: 0;
+                font-size: rem(28px);
+                line-height: rem(46px);
+            }
+
+            &__post {
+                color: $color-1;
+            }
+        }
+    }
+}
