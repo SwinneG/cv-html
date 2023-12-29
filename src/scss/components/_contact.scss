@@ -26,6 +26,7 @@
                 border: 4px solid $color-2;
                 color: $color-2;
                 padding: 18px 25px;
+                outline: 0;
             }
 
             &--half {
@@ -43,9 +44,15 @@
             }
             p {
                 margin: 0;
+                font-size: rem(16px);
             }
             a {
                 color: $color-1;
+                font-size: rem(16px);
+
+                &:hover, &:focus {
+                    text-decoration: underline;
+                } 
             }
         }
        

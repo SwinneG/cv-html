@@ -12,7 +12,7 @@
     // }
 
     &__card {
-        padding: 20px;
+        padding: 30px;
         margin-bottom: 25px;
         display: flex;
         background-color: #424657;
@@ -67,6 +67,14 @@
                 flex: 0 1 100%;
                 line-height: rem(22px);
                 font-weight: 600;
+
+                a {
+                    color: $color-white;
+                    
+                    &:hover {
+                        text-decoration: underline;     
+                    }
+                }
                 
                 span {
                     font-size: rem(14px);
@@ -80,12 +88,23 @@
         }
 
         &--highschool {
+            .formations__card__img {
+                img {
+                    max-width: 90px;
+                }
+            }
+            .formations__card__content {
+                display: flex;
+                align-items: center;
+            }
             .formations__card__item {
                 flex-wrap: wrap;
 
                 .date {
                     flex: 0 0 100%;
                     font-weight: 400;
+                    font-size: rem(16px);
+                    margin-bottom: 5px;
                 }
             }
         }

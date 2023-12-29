@@ -26,4 +26,10 @@
     text-align: center;
     padding: 10px 20px;
     display: block;
+    transition: background-color 300ms ease-in-out;
+
+    &:hover, &:focus {
+        background-color: $color-white;
+        color: $color-4;
+    }
 }
