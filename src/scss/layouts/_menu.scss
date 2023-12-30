@@ -28,3 +28,19 @@
 //     }
 
 // }
+
+.menu {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        
+        li {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
