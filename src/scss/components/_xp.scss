@@ -59,11 +59,12 @@
 
             &__company {
                 margin: 0;
-                font-size: rem(30px);
-                line-height: rem(42px);
-                font-weight: 600;
+                a {
+                    font-size: rem(30px);
+                    line-height: rem(42px);
+                    font-weight: 600;
+                }
             }
-
             &__post {
                 color: $color-1;
                 font-size: rem(18px);

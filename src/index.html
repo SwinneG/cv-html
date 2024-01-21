@@ -10,16 +10,22 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#intro">Intro</a>
                 </li>
                 <li>
-                    <a href="#">XP</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#">Formations</a>
+                    <a href="#xp">XP</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#formations">Formations</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -27,7 +33,7 @@
     
     <main id="main" class="main">
         
-        <section class="introduction">
+        <section class="introduction" id="intro">
             <div class="container">
                 <div class="introduction__content">
                     <h1 class="introduction__title uppercase">
@@ -44,7 +50,12 @@
                     </ul>
                     <h2 class="introduction__subtitle">-- Introduction</h2>
                     <p class="introduction__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam facere perspiciatis voluptatibus libero sapiente eligendi rerum ipsam commodi expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio totam facere perspiciatis voluptatibus libero sapiente eligendi rerum ipsam commodi expedita!
+                        Développeuse web spécialisée en frontend avec 10 ans d'XP en agence et en consultance IT. Ayant développé de multiples projets basés sur des technologies variées. 
+                        <br><br>
+                        En formation perpétuelle, toujours à la recherche de nouveaux challenges techniques . Adepte du code propre et du principe DRY. La satisfaction d'un client reste mon objectif principal.
+                        <br><br>
+                        Actuellement à la recherche d'un emploi au Luxembourg (uniquement).
+                        Je me forme actuellement aux frameworks Javascript tels que React et Angular + typescript.
                     </p>
                     <ul class="qualityList">
                         <li class="qualityList__item"><span class="txt-colored">#</span>passion</li>
@@ -55,7 +66,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <div class="services__content">
                     <h2 class="services__title">Services<span class="dot"></span></h2>
@@ -200,43 +211,53 @@
             </div>
         </section>
 
-        <section class="xp">
+        <section class="xp" id="xp">
             <div class="container">
                 <div class="xp__content">
                     <h2 class="xp__title">Experience<span class="dot"></span></h2>
                     <div class="xp__timeline">
                         <div class="xp__timeline__item">
                             <div class="xp__timeline__item__period">01/03/2022 - 31/01/2023</div>
-                            <h3 class="xp__timeline__item__company">Binsfeld</h3>
-                            <div class="xp__timeline__item__post">Web developer</div>
+                            <h3 class="xp__timeline__item__company">
+                                <a href="https://binsfeld.lu/" target="_blank">Binsfeld</a>
+                            </h3>
+                            <div class="xp__timeline__item__post">Full-stack developer</div>
                         </div>
                         <div class="xp__timeline__item xp__timeline__item--right">
                             <div class="xp__timeline__item__period">01/09/2021 - 17/02/2022</div>
-                            <h3 class="xp__timeline__item__company">VOUS Agency</h3>
-                            <div class="xp__timeline__item__post">Web developer</div>
+                            <h3 class="xp__timeline__item__company">
+                                <a href="https://vous.lu/" target="_blank">VOUS Agency</a>
+                            </h3>
+                            <div class="xp__timeline__item__post">Full-stack developer</div>
                         </div>
                         <div class="xp__timeline__item">
                             <div class="xp__timeline__item__period"> 01/01/2017 - 31/08/2021</div>
-                            <h3 class="xp__timeline__item__company">Sword Group</h3>
-                            <div class="xp__timeline__item__post">Front end developer & Web designer</div>
+                            <h3 class="xp__timeline__item__company">
+                                <a href="https://www.sword-group.com/fr/luxembourg/" target="_blank">Sword Group</a>
+                            </h3>
+                            <div class="xp__timeline__item__post">Front-end developer & Web designer</div>
                         </div>
                         <div class="xp__timeline__item xp__timeline__item--right">
                             <div class="xp__timeline__item__period">01/08/2015 - 31/12/2016</div>
-                            <h3 class="xp__timeline__item__company">Farvest Group</h3>
-                            <div class="xp__timeline__item__post">Web developer</div>
+                            <h3 class="xp__timeline__item__company">
+                                <a href="https://www.farvest.com/" target="_blank">Farvest Group</a>
+                            </h3>
+                            <div class="xp__timeline__item__post">Full-stack developer</div>
                         </div>
                         <div class="xp__timeline__item">
-                            <div class="xp__timeline__item__period">01/08/2015 - 31/12/2016</div>
-                            <h3 class="xp__timeline__item__company">WDD Agency</h3>
-                            <div class="xp__timeline__item__post">Web developer</div>
+                            <div class="xp__timeline__item__period">01/08/2014 - 01/08/2015</div>
+                            <h3 class="xp__timeline__item__company">
+                                <a href="https://www.wdd.be/#home" target="_blank">WDD Agency</a>
+                            </h3>
+                            <div class="xp__timeline__item__post">Full-stack developer</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="formations">
-            <div class="container">
+        <section class="formations" id="formations">
+            <div class="container"> 
                 <div class="formations__content">
                     <h2 class="formations__title">Formations & certifications<span class="dot"></span></h2>
 
@@ -253,11 +274,11 @@
                                     2023
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.udemy.com/course/react-formation-complete/" target="_blank">React JS</a>
+                                    <a href="https://www.udemy.com/course/vuejs-de-a-a-z/" target="_blank">Vue.JS de A à Z (V2)</a>
                                     <br>
                                     <span><i class="fa-solid fa-video"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 13 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 5 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -265,11 +286,11 @@
                                     2023
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.udemy.com/course/angular-developper-tutoriel-application-typescript/" target="_blank">Angular 2+ (V16)</a>
+                                    <a href="https://www.udemy.com/course/angular-developper-tutoriel-application-typescript/" target="_blank">Développer votre première application avec Angular (V16)</a>
                                     <br>
                                     <span><i class="fa-solid fa-video"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 11 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 11 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -277,11 +298,11 @@
                                     2023
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.udemy.com/course/vuejs-de-a-a-z/" target="_blank">VueJS 2</a>
+                                    <a href="https://www.udemy.com/course/react-formation-complete/" target="_blank">React de A à Z</a>
                                     <br>
                                     <span><i class="fa-solid fa-video"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 5 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 13 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -289,11 +310,11 @@
                                     2023
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.udemy.com/course/formation-complete-developpeur-front-end/" target="_blank">Formation complète développeur frontend</a>
+                                    <a href="https://www.udemy.com/course/typescript-de-a-a-z/" target="_blank">TypeScript en partant de zéro</a>
                                     <br>
                                     <span><i class="fa-solid fa-video"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 29,5 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 4 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -301,11 +322,11 @@
                                     2023
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.udemy.com/course/typescript-de-a-a-z/" target="_blank">TypeScript</a>
+                                    <a href="https://www.udemy.com/course/formation-complete-developpeur-front-end/" target="_blank">Formation complète développeur Front-End</a>
                                     <br>
                                     <span><i class="fa-solid fa-video"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 4 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 29,5 heures</span>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +368,7 @@
                                     Workshop consultants - La relation client<br>
                                     <span><i class="fa-solid fa-chalkboard-user"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 8 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 8 heures</span>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +390,7 @@
                                     Agile PM ( + certification )<br>
                                     <span><i class="fa-solid fa-chalkboard-user"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 16 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 16 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -381,7 +402,7 @@
                                     <br>
                                     <span><i class="fa-solid fa-chalkboard-user"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 24 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 24 heures</span>
                                 </div>
                             </div>
                             <div class="formations__card__item">
@@ -389,11 +410,11 @@
                                     2017
                                 </div>
                                 <div class="txt">
-                                    <a href="https://www.oxiane.lu/formation/angularjs-2/" target="_blank">Angular 2</a>
+                                    <a href="https://www.oxiane.lu/formation/angularjs-2/" target="_blank">Angular 2+</a>
                                     <br>
                                     <span><i class="fa-solid fa-chalkboard-user"></i></span>
                                     &nbsp;
-                                    <span><i class="fa-solid fa-clock"></i> 24 hours</span>
+                                    <span><i class="fa-solid fa-clock"></i> 24 heures</span>
                                 </div>
                             </div>
                         </div>
@@ -401,7 +422,7 @@
 
                     <div class="formations__card formations__card--highschool">
                         <div class="formations__card__img">
-                            <img src="assets/unif.svg" alt="">
+                            <img src="assets/img/unif.svg" alt="">
                             <h3 class="formations__card__img__title">Haute Ecole Leon Eli Troclet</h3>
                         </div>
                         <div class="formations__card__content">
@@ -420,13 +441,13 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio__content">
                     <h2 class="portfolio__title">Portfolio<span class="dot"></span></h2>
                     <div class="portfolio__cards">
-                        <div class="portfolio__card">
-                            <img src="assets/jspote.jpg" alt="">
+                        <a class="portfolio__card" href="jsp-logo.html">
+                            <img src="assets/portfolio/miniatures/jspote2.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
                                     JSpote
@@ -435,9 +456,9 @@
                                     #design
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio__card">
-                            <img src="assets/logo-cabu.jpg" alt="">
+                        </a>
+                        <a class="portfolio__card" href="cabu-logo.html">
+                            <img src="assets/portfolio/miniatures/logo-cabu.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
                                     Carrosserie Cabu
@@ -446,66 +467,100 @@
                                     #design
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio__card">
-                            <img src="assets/rehazenter.jpg" alt="">
+                        </a>
+                        <a class="portfolio__card" href="cabu-site.html">
+                            <img src="assets/portfolio/miniatures/cabu-site4.jpg" alt="">
+                            <div class="portfolio__card__content">
+                                <h3 class="portfolio__card__content__title">
+                                    Carrosserie Cabu
+                                </h3>
+                                <div class="portfolio__card__content__tag">
+                                    #développement
+                                </div>
+                            </div>
+                        </a>
+                        <a class="portfolio__card" href="rehazenter-site.html">
+                            <img src="assets/portfolio/miniatures/rehazenter.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
                                     Rehazenter
                                 </h3>
                                 <div class="portfolio__card__content__tag">
-                                    #website
+                                    #développement
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio__card">
-                            <img src="assets/vous.jpg" alt="">
+                        </a>
+                        <a class="portfolio__card" href="vous-site.html">
+                            <img src="assets/portfolio/miniatures/vous.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
-                                    VOUS
+                                    VOUS Agency
                                 </h3>
                                 <div class="portfolio__card__content__tag">
-                                    #website
+                                    #développement
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio__card">
-                            <img src="assets/lmih.jpg" alt="">
+                        </a>
+                        <a class="portfolio__card" href="lmih-site.html">
+                            <img src="assets/portfolio/miniatures/lmih.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
                                     LMIH
                                 </h3>
                                 <div class="portfolio__card__content__tag">
-                                    #website
+                                    #développement
                                 </div>
                             </div>
-                        </div>
-                        <div class="portfolio__card">
-                            <img src="assets/placeholder.jpg" alt="">
+                        </a>
+                        <a class="portfolio__card" href="creativitycamp2023-site.html">
+                            <img src="assets/portfolio/miniatures/jspote2.jpg" alt="">
                             <div class="portfolio__card__content">
                                 <h3 class="portfolio__card__content__title">
-                                    Portfolio 1
+                                    Creativity Camp 2023
                                 </h3>
                                 <div class="portfolio__card__content__tag">
-                                    #design
+                                    #développement
                                 </div>
                             </div>
-                        </div>
+                        </a>
+                        <a class="portfolio__card" href="ladore-site.html">
+                            <img src="assets/portfolio/miniatures/jspote2.jpg" alt="">
+                            <div class="portfolio__card__content">
+                                <h3 class="portfolio__card__content__title">
+                                    Ladore
+                                </h3>
+                                <div class="portfolio__card__content__tag">
+                                    #développement
+                                </div>
+                            </div>
+                        </a>
+                        <a class="portfolio__card" href="myrights-site.html">
+                            <img src="assets/portfolio/miniatures/jspote2.jpg" alt="">
+                            <div class="portfolio__card__content">
+                                <h3 class="portfolio__card__content__title">
+                                    My rights
+                                </h3>
+                                <div class="portfolio__card__content__tag">
+                                    #développement
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
+<!-- 
                     <button class="portfolio__loadmore">
                         Load more
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contactt">
             <div class="container">
                 <div class="contact__content">
                     <h2 class="contact__title">Contact<span class="dot"></span></h2>
 
-                    <form class="contact__form">
+                    <p>Contactez-moi directement via <a href="mailto:swinne.gael@gmail.com">swinne.gael@gmail.com</a> ou via <a target="_blank" href="https://www.linkedin.com/in/gael-swinne/">LinkedIn</a></p>
+                    <!-- <form class="contact__form">
                         <div class="form-group form-group--half">
                             <label for="name" class="">Nom *</label>
                             <input type="text" id="name">
@@ -522,7 +577,7 @@
                             <button type="button">Envoyer</button>
                             <p>Or directly on <a href="mailto:swinne.gael@gmail.com">swinne.gael@gmail.com</a></p>
                         </div>
-                    </form>
+                    </form> -->
                     
                 </div>
             </div>
@@ -531,7 +586,7 @@
     </main>
 
     <footer id="footer" class="footer">
-        &copy; Swinne Gael 2023
+        &copy; Swinne Gaël -  2024
     </footer>
 
 </body>

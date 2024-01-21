@@ -69,7 +69,16 @@
 
 .header {
     position: absolute;
-    right: 10%;
-    top: 18%;
     z-index: 1;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    top: 15%;
+
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    right: calc(var(--bs-gutter-x) * 0.5);
+    left: calc(var(--bs-gutter-x) * 0.5);
+    max-width: 1320px;
 }

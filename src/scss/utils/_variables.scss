@@ -16,7 +16,7 @@ $border-card: $color-1;
 //COLORS
 $color-title-default: $color-2;
 $color-text-default: $color-2;
-$color-link-default: $color-black;
+$color-link-default: $color-2;
 
 //FONT-FAMILY
 $fontFamily-default: 'Open Sans', sans-serif;
@@ -24,3 +24,12 @@ $fontFamily-default: 'Open Sans', sans-serif;
 //FONT-SIZE
 $fontSize-default: rem(18px);
 $lineHeight-default: rem(30px);
+
+//CONTAINER
+// $container-padding-lr--xxs: 12px;
+$container-padding-lr--xs: 15px;
+$container-padding-lr--sm: 30px;
+$container-padding-lr--md: 30px;
+$container-padding-lr--lg: 40px;
+$container-padding-lr--xl: 40px;
+$container-padding-lr--xxl: 40px;

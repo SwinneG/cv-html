@@ -36,11 +36,16 @@
         gap: 10px;
         margin: 0;
         padding: 0;
-        background-color: white;
+        background-color: rgba(255,255,255,0.2);
+        // background-color: rgba(255, 194, 92, 0.4);
+        padding-right: 20px;
         
         li {
-            font-size: 18px;
             text-transform: uppercase;
+
+            a {
+                font-weight: 700;
+            }
         }
     }
 }

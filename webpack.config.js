@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
     entry: {
-        index: path.resolve(__dirname, './src/js/index.js')
+        index: path.resolve(__dirname, './src/js/index.js'),
     }, 
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -31,8 +31,64 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title:'Webpack app',
-            template: path.resolve(__dirname, './src/index.html')
+            template: path.resolve(__dirname, './src/index.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/jsp-logo.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'jsp-logo.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/cabu-logo.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'cabu-logo.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/cabu-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'cabu-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/rehazenter-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'rehazenter-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/vous-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'vous-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/lmih-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'lmih-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/creativitycamp2023-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'creativitycamp2023-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/ladore-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'ladore-site.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, './src/myrights-site.html'),
+            inject: true,
+            chunks: ['index'],
+            filename: 'myrights-site.html'
         })
     ],
     module: {

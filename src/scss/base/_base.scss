@@ -20,3 +20,27 @@ body {
 img {
     max-width: 100%;
 }
+
+.container {
+    @include make-container();
+    padding: 0 $container-padding-lr--xxl;
+
+    @include media-breakpoint-down(xxl) {
+        padding: 0 $container-padding-lr--xl;
+    }
+    @include media-breakpoint-down(xl) {
+        padding: 0 $container-padding-lr--lg;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 $container-padding-lr--md;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 $container-padding-lr--sm;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0 $container-padding-lr--xs;
+    }
+    // @include media-breakpoint-down(xs) {
+    //     padding: 0 $container-padding-lr--xxs;
+    // }
+}
