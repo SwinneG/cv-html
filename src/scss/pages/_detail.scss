@@ -1,4 +1,14 @@
 .banner {
+    &:after {
+        content:"";
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        // background-color: rgba(255, 194, 92, 0.7);
+        background-color: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 300px;
+    }
     &__img {
         width: 100%;
         height: 300px;
@@ -24,6 +34,7 @@
         .dot::after {
             width: 12px;
             height: 12px;
+            bottom: 18px;
         }
     }
     &__content {
