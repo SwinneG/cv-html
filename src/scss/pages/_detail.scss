@@ -8,6 +8,10 @@
         background-color: rgba(0,0,0,0.7);
         width: 100%;
         height: 300px;
+
+        @include media-breakpoint-down(lg) {
+            height: 150px;
+        }
     }
     &__img {
         width: 100%;
@@ -15,13 +19,15 @@
         display: block;
         object-fit: cover;
         margin-bottom: 50px;
+
+        @include media-breakpoint-down(lg) {
+            height: 150px;
+        }
     }
 }
 .detail_portfolio {
     .back {
         @extend .button;
-        // border: 4px solid $color-2;
-        // padding: 6px 15px;
         display: inline-block;
         font-size: rem(16px);
         margin-bottom: 40px;
@@ -35,19 +41,39 @@
             width: 12px;
             height: 12px;
             bottom: 18px;
+
+            @include media-breakpoint-down(md) {
+                width: 8px;
+                height: 8px;
+                bottom: 10px;
+            }
         }
     }
     &__content {
         display: flex;
         position: relative;
 
+        @include media-breakpoint-down(lg) {
+           flex-wrap: wrap;
+        }
+
         .img {
             flex: 0 0 75%;
             padding-right: 30px;
+
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 100%;
+                padding-right: 0;
+                order: 2;
+            }
         }
         .text {
             flex: 0 0 25%;
-            // border: 1px solid red;
+
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 100%;
+                order: 1;
+            }
 
             &__static {
                 position: static;
@@ -57,6 +83,13 @@
                 @extend .button;
                 border: 4px solid $color-1;
                 color: $color-1;
+
+                @include media-breakpoint-down(lg) {
+                    width: 50%;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 80%;
+                }
 
                 &:hover, &:focus {
                     background-color: $color-1;

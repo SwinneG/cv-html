@@ -1,7 +1,5 @@
 .services {
-    // & > .container {
 
-    // }
     &__content {
         display: flex;
         flex-wrap: wrap;
@@ -9,6 +7,10 @@
         justify-content: center;
         align-items: center;
         padding: 50px 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 0;
+        }
     }
     &__title {
         flex: 0 0 100%;
@@ -18,6 +20,12 @@
         flex: 0 1 48.5%;
         padding: 30px;
         background-color: $color-black;
+
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         &--big {
             border: 10px solid $border-card;
@@ -32,6 +40,13 @@
             justify-content: center;
             gap: 20px;
             align-items: center;
+
+            @include media-breakpoint-down(lg) {
+                flex-wrap: wrap;
+                align-items: flex-start;
+                order: 2;
+                flex: 0 0 100%;
+            }
         }
 
         &__item {
@@ -44,6 +59,15 @@
             justify-content: center;
             max-width: 48px;
 
+            @include media-breakpoint-down(xl) {
+                max-width: 28px;
+            }
+            @include media-breakpoint-down(lg) {
+                max-width: 80%;
+                flex: 0 0 17%;
+                flex-direction: column;
+            }
+
             .name {
                 display: none;
                 border: 4px solid $border-card;
@@ -54,6 +78,17 @@
                 top: -60px;
                 white-space: nowrap;
                 width: auto;
+
+                @include media-breakpoint-down(lg) {
+                    display: flex;
+                    border: none;
+                    padding: 0;
+                    top: 5px;
+                    position: relative;
+                    width: 100%;
+                    white-space: wrap;
+                    justify-content: center;
+                }
 
                 &::after {
                     content: '';
@@ -68,8 +103,11 @@
                     transform: translateX(-100%) rotate(45deg);
                     border: solid $color-1;
                     border-width: 0 4px 4px 0;
-                    // padding: 4px;
                     z-index: 1;
+
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
                 }
             }
             &:hover .name {
@@ -82,6 +120,13 @@
             font-size: rem(18px);
             line-height: rem(20px);
             margin-bottom: 0;
+
+            @include media-breakpoint-down(lg) {
+               order: 1;
+               flex: 0 0 100%;
+               margin-bottom: 20px;
+               margin-top: 0;
+            }
         }
     }
 }

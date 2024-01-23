@@ -1,15 +1,12 @@
 .formations {
-    // & > .container {
-
-    // }
 
     &__content {
         padding: 50px 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 0;
+        }
     }
-
-    // &__title {
-
-    // }
 
     &__card {
         padding: 30px;
@@ -18,11 +15,13 @@
         background-color: #424657;
         border-radius: 4px;
 
+        @include media-breakpoint-down(md) {
+            flex-wrap: wrap;
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
-
-        
 
         &__img {
             flex: 0 0 50%;
@@ -32,9 +31,28 @@
             align-items: center;
             padding-right: 30px;
 
+            @include media-breakpoint-down(xxl) {
+                flex: 0 0 45%;
+            }
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 30%;
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 100%;
+                padding-right: 0;
+                margin-bottom: 35px;
+            }
+
             img {
                 width: 40%;
                 height: auto;
+
+                @include media-breakpoint-down(lg) {
+                    width: 90%;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 70%;
+                }
             }
 
             &__title {
@@ -47,6 +65,17 @@
         &__content {
             flex: 0 0 50%;
             padding-left: 30px;
+
+            @include media-breakpoint-down(xxl) {
+                flex: 0 0 55%;
+            }
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 70%;
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 100%;
+                padding-left: 0;
+            }
         }
 
         &__item {
@@ -67,14 +96,6 @@
                 flex: 0 1 100%;
                 line-height: rem(22px);
                 font-weight: 600;
-
-                // a {
-                //     color: $color-white;
-                    
-                //     &:hover {
-                //         text-decoration: underline;     
-                //     }
-                // }
                 
                 span {
                     font-size: rem(14px);

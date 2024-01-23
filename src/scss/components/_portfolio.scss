@@ -1,25 +1,28 @@
 .portfolio {
     background-color: $color-4;
-    // & > .container {
-
-    // }
     
     &__content {
         padding: 50px 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 0;
+        }
     }
-
-    // &__title {
-
-    // }
 
     &__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 25px;
+
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__card {
-        // border: 1px solid white;
         position: relative;
         cursor: pointer;
 

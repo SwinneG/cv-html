@@ -3,6 +3,10 @@
 
     &__content {
         padding: 50px 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 0;
+        }
     }
 
     &__timeline {
@@ -21,15 +25,29 @@
             border-radius: 3px;
             z-index: 1;
             transform: translateX(-50%);
+
+            @include media-breakpoint-down(sm) {
+                left: 95%;
+                top: 60px;
+            }
         }
 
         &__item {
             flex: 0 0 100%;
-            // border: 1px solid white;
             text-align: right;
             padding: 30px;
             padding-right: calc(50% + 30px);
             position: relative;
+
+            @include media-breakpoint-down(md) {
+                padding: 20px;
+                padding-right: calc(50% + 30px);
+            }
+            @include media-breakpoint-down(sm) {
+                padding: 25px;
+                padding-right: 15%;
+                padding-left: 0;
+            }
 
             &:after {
                 content: "";
@@ -43,12 +61,22 @@
                 height: 20px;
                 border-radius: 50%;
                 z-index: 2;
+
+                @include media-breakpoint-down(sm) {
+                    left: 95%;
+                }
             }
 
             &--right {
                 text-align: left;
                 padding-right: 0;
                 padding-left: calc(50% + 30px);
+
+                @include media-breakpoint-down(sm) {
+                    text-align: right;
+                    padding-right: 15%;
+                    padding-left: 0;
+                }
             }
 
             &__period {
@@ -63,12 +91,22 @@
                     font-size: rem(30px);
                     line-height: rem(42px);
                     font-weight: 600;
+                    
+                    @include media-breakpoint-down(md) {
+                        font-size: rem(25px);
+                        line-height: rem(40px);
+                    }
                 }
             }
             &__post {
                 color: $color-1;
                 font-size: rem(18px);
                 line-height: rem(22px);
+
+                @include media-breakpoint-down(md) {
+                    font-size: rem(16px);
+                    line-height: rem(20px);
+                }
             }
         }
     }

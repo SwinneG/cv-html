@@ -27,6 +27,7 @@
     padding: 10px 20px;
     display: block;
     transition: background-color 300ms ease-in-out;
+    text-decoration: none;
 
     &:hover, &:focus {
         background-color: $color-white;
